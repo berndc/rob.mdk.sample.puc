@@ -1,0 +1,7 @@
+{
+	"AppId": "com.sap.mobile.platform.cards",
+	"DestinationName": "com.sap.edm.sampleservice.v2",
+	"LanguageURLParam": "sap-language",
+	"OfflineEnabled": true,
+	"ServiceUrl": "/destinations/mobileservices_cf"
+}

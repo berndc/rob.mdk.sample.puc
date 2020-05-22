@@ -1,0 +1,24 @@
+{
+	"Service": "/RobSampleApp1/Services/SampleServiceV2.service",
+	"DefiningRequests": [{
+		"Name": "Customers",
+		"Query": "Customers"
+	}, {
+		"Name": "Products",
+		"Query": "Products"
+	}, {
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	}, {
+		"Name": "SalesOrderItems",
+		"Query": "SalesOrderItems"
+	}],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/RobSampleApp1/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/RobSampleApp1/Actions/Service/InitializeOfflineFailureMessage.action"
+}
