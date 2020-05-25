@@ -1,0 +1,89 @@
+{
+	"Caption": "ProductDetails",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Gewicht in",
+							"Value": "{DimensionUnit}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"MaxItemCount": 1,
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Breit",
+							"Value": "{DimensionDepth}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Hoch",
+							"Value": "{DimensionHeight}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionKeyValue1",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"AccessoryType": "disclosureIndicator",
+								"KeyName": "KeyName",
+								"Styles": {
+									"KeyName": "preis",
+									"Value": "{Price}"
+								},
+								"Value": "Value",
+								"Visible": true
+							}
+						}
+					],
+					"Visible": true,
+					"_Name": "SectionSimplePropertyCollection1",
+					"_Type": "Section.Type.SimplePropertyCollection"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ProductDetails",
+	"_Type": "Page"
+}

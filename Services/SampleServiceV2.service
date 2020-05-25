@@ -1,5 +1,5 @@
 {
-	"AppId": "com.sap.mobile.platform.cards",
+	"AppId": "com.sap.mdk.demo",
 	"DestinationName": "com.sap.edm.sampleservice.v2",
 	"LanguageURLParam": "sap-language",
 	"OfflineEnabled": true,

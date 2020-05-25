@@ -1,0 +1,16 @@
+{
+	"OnFailureLog": {
+		"Level": "Warn",
+		"Message": "Fehler: Failor"
+	},
+	"OnInvalidLog": {
+		"Level": "Warn",
+		"Message": "Fehler: Invalid"
+	},
+	"OnSuccessLog": {
+		"Level": "Info",
+		"Message": "Success"
+	},
+	"PageToOpen": "/RobSampleApp1/Pages/ProductDetailPage.page",
+	"_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,71 @@
+{
+	"Caption": "Product Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{ShortDescription}",
+						"Description": "{LongDescription}",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "{UpdatedTimestamp}",
+						"HeadlineText": "{Name}",
+						"StatusText": "{NumberOfProducts}",
+						"Subhead": "{CategoryName}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Gewicht",
+							"Value": "{{#Property:Weight}} {{#Property:WeightUnit}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Grösse",
+							"Value": "{{#Property:DimensionDepth}} X {{#Property:DimensionHeight}} in {{#Property:DimensionUnit}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Preis",
+							"Value": "{{#Property:Price}} {{#Property:CurrencyCode}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue1",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ProductDetailPage",
+	"_Type": "Page"
+}

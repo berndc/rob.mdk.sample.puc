@@ -1,0 +1,55 @@
+{
+	"Caption": "FormLali",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "{CategoryName}",
+					"Controls": [
+						{
+							"AlternateInput": "Barcode",
+							"Caption": "Product",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Default",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{CategoryName}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"IsEditable": true,
+							"IsVisible": true,
+							"MaxNumberOfLines": 100,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{LongDescription}",
+							"_Name": "FormCellNote0",
+							"_Type": "Control.Type.FormCell.Note"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"AlternateInput": "None",
+							"Caption": "Caption",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Url",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{PictureUrl}",
+							"_Name": "FormCellSimpleProperty2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "FormLali",
+	"_Type": "Page"
+}

@@ -1,0 +1,45 @@
+{
+	"Caption": "Kunden",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{EmailAddress}"
+							}
+						],
+						"Description": "{City}",
+						"DetailImage": "res://contact.png",
+						"Headline": "{{#Property:FirstName}} , {{#Property:LastName}}",
+						"OnPress": "/RobSampleApp1/Actions/Nav2CustomerDetailPage.action",
+						"Subheadline": "{{#Property:DateOfBirth}}"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"Target": {
+						"EntitySet": "Customers",
+						"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "CustomerListPage",
+	"_Type": "Page"
+}

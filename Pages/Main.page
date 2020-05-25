@@ -6,9 +6,31 @@
 				{
 					"Buttons": [
 						{
-							"OnPress": "/RobSampleApp1/Actions/Nav2Customer_LIst.action",
+							"OnPress": "/RobSampleApp1/Actions/Nav2CustomerListPage.action",
 							"TextAlignment": "center",
-							"Title": "Kundeliste",
+							"Title": "Kunden",
+							"Visible": true
+						},
+						{
+							"OnPress": "/RobSampleApp1/Actions/Nav2ProductLIstPage.action",
+							"TextAlignment": "center",
+							"Title": "Artikel",
+							"Visible": true
+						},
+						{
+							"TextAlignment": "center",
+							"Title": "LETI- Scan",
+							"Visible": true
+						},
+						{
+							"OnPress": "/RobSampleApp1/Actions/Nav2LaliPage.action",
+							"TextAlignment": "center",
+							"Title": "Ladeliste erstellen",
+							"Visible": true
+						},
+						{
+							"TextAlignment": "center",
+							"Title": "Wareneingang buchen",
 							"Visible": true
 						}
 					],
@@ -16,7 +38,7 @@
 						"FooterVisible": false
 					},
 					"Visible": true,
-					"_Name": "SectionButtonTable0",
+					"_Name": "SectionButtonTable2",
 					"_Type": "Section.Type.ButtonTable"
 				}
 			],

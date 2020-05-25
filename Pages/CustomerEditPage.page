@@ -1,0 +1,64 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RobSampleApp1/Actions/CloseModalPage_Cancel.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/RobSampleApp1/Actions/Customers_UpdateEntity.action",
+				"Position": "right",
+				"SystemItem": "Save",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Kinder ändern",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Vornahme",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{FirstName}",
+							"_Name": "FCFirstName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Nachname",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{LastName}",
+							"_Name": "FCLastName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Email",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Email",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{EmailAddress}",
+							"_Name": "FCEmail",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "CustomerEditPage",
+	"_Type": "Page"
+}

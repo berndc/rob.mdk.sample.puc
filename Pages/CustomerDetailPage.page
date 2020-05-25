@@ -1,0 +1,81 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RobSampleApp1/Actions/Nav2CustomerEditPage.action",
+				"Position": "right",
+				"SystemItem": "Edit",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Kunden Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{City}",
+						"Description": "{LongDescription}",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "{EmailAddress}",
+						"HeadlineText": "{{#Property:FirstName}} {{#Property:LastName}}",
+						"Subhead": "{Country}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Telefon",
+							"Value": "{PhoneNumber}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Geburtsdatum",
+							"Value": "{DateOfBirth}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Adresse",
+							"Value": "{{#Property:Address/#Property:Street}} {{#Property:Address/#Property:HouseNumber}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue1",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ProductDetailPage",
+	"_Type": "Page"
+}

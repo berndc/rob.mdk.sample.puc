@@ -1,0 +1,17 @@
+{
+	"OnFailure": "/RobSampleApp1/Actions/UpdateCustomerEntityFailureMessage.action",
+	"OnSuccess": "/RobSampleApp1/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"City": "",
+		"EmailAddress": "#Page:CustomerEditPage/#Control:FCEmail/#Value",
+		"FirstName": "#Page:CustomerEditPage/#Control:FCFirstName/#Value",
+		"LastName": "#Page:CustomerEditPage/#Control:FCLastName/#Value"
+	},
+	"Target": {
+		"EntitySet": "Customers",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
+	},
+	"ValidationRule": "/RobSampleApp1/Rules/EmailValidation.js",
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}
