@@ -1,5 +1,5 @@
 {
-	"Caption": "Main",
+	"Caption": "P&C EH- Logistik: Main ",
 	"Controls": [
 		{
 			"Sections": [
@@ -7,28 +7,34 @@
 					"Buttons": [
 						{
 							"OnPress": "/RobSampleApp1/Actions/Nav2CustomerListPage.action",
+							"Style": "MyPuCButton",
+							"Target": "",
 							"TextAlignment": "center",
 							"Title": "Kunden",
 							"Visible": true
 						},
 						{
 							"OnPress": "/RobSampleApp1/Actions/Nav2ProductLIstPage.action",
+							"Target": "",
 							"TextAlignment": "center",
 							"Title": "Artikel",
 							"Visible": true
 						},
 						{
+							"Target": "",
 							"TextAlignment": "center",
 							"Title": "LETI- Scan",
 							"Visible": true
 						},
 						{
 							"OnPress": "/RobSampleApp1/Actions/Nav2LaliPage.action",
+							"Target": "",
 							"TextAlignment": "center",
 							"Title": "Ladeliste erstellen",
 							"Visible": true
 						},
 						{
+							"Target": "",
 							"TextAlignment": "center",
 							"Title": "Wareneingang buchen",
 							"Visible": true
@@ -37,15 +43,49 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Target": "",
 					"Visible": true,
 					"_Name": "SectionButtonTable2",
 					"_Type": "Section.Type.ButtonTable"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ImageCells": [
+						{
+							"ImageCell": {
+								"Image": "/RobSampleApp1/Images/puc_d.jpg",
+								"ImageIsCircular": true,
+								"Subtitle": "PuC",
+								"Title": "Düsseldorf",
+								"Visible": true
+							}
+						},
+						{
+							"ImageCell": {
+								"Image": "/RobSampleApp1/Images/dita.jpg",
+								"ImageIsCircular": true,
+								"Subtitle": "Retail",
+								"Title": "FaDi",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "HorizontalFit"
+					},
+					"Visible": true,
+					"_Name": "SectionImageCollection0",
+					"_Type": "Section.Type.ImageCollection"
 				}
 			],
+			"Target": "",
 			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
+	"Target": "",
 	"ToolBar": {
 		"Controls": [
 			{
@@ -53,6 +93,7 @@
 				"Clickable": true,
 				"Enabled": true,
 				"OnPress": "/RobSampleApp1/Actions/Logout.action",
+				"Target": "",
 				"Visible": true,
 				"_Name": "LogoutToolbarItem",
 				"_Type": "Control.Type.ToolbarItem"
@@ -62,8 +103,20 @@
 				"Clickable": true,
 				"Enabled": true,
 				"OnPress": "/RobSampleApp1/Actions/Service/SyncStartedMessage.action",
+				"Target": "",
 				"Visible": true,
 				"_Name": "UploadToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			},
+			{
+				"Caption": "Upload Logs",
+				"Clickable": true,
+				"Enabled": true,
+				"ItemType": "Button",
+				"OnPress": "/RobSampleApp1/Actions/LogUpload.action",
+				"Target": "",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"
 			}
 		]

@@ -1,0 +1,5 @@
+{
+	"OnFailure": "/RobSampleApp1/Actions/LogUploadFailure.action",
+	"OnSuccess": "/RobSampleApp1/Actions/LogUploadSuccessful.action",
+	"_Type": "Action.Type.Logger.Upload"
+}

@@ -4,7 +4,7 @@
 		{
 			"Sections": [
 				{
-					"Caption": "{CategoryName}",
+					"Caption": "{#Property:Product/#Property:CategoryName}}",
 					"Controls": [
 						{
 							"AlternateInput": "Barcode",
@@ -13,6 +13,11 @@
 							"IsVisible": true,
 							"KeyboardType": "Default",
 							"PlaceHolder": "PlaceHolder",
+							"Styles": {
+								"Background": "objectHeaderBackground",
+								"Caption": "objectHeaderBodyText"
+							},
+							"Target": "",
 							"Value": "{CategoryName}",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -22,11 +27,13 @@
 							"IsVisible": true,
 							"MaxNumberOfLines": 100,
 							"PlaceHolder": "PlaceHolder",
+							"Target": "",
 							"Value": "{LongDescription}",
 							"_Name": "FormCellNote0",
 							"_Type": "Control.Type.FormCell.Note"
 						}
 					],
+					"Target": "",
 					"Visible": true
 				},
 				{
@@ -38,18 +45,22 @@
 							"IsVisible": true,
 							"KeyboardType": "Url",
 							"PlaceHolder": "PlaceHolder",
+							"Target": "",
 							"Value": "{PictureUrl}",
 							"_Name": "FormCellSimpleProperty2",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
+					"Target": "",
 					"Visible": true
 				}
 			],
+			"Target": "",
 			"_Name": "FormCellContainer0",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
+	"Target": "",
 	"_Name": "FormLali",
 	"_Type": "Page"
 }

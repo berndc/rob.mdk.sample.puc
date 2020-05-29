@@ -1,6 +1,5 @@
 {
-	"Message": "Email address is not in the correct format recipient @ domain . domaintype",
-	"OKCaption": "OK",
-	"Title": "Emailvalidierung",
+	"Message": "für das Protokoll",
+	"OKCaption": "O",
 	"_Type": "Action.Type.Message"
 }

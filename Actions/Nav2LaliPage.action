@@ -1,4 +1,5 @@
 {
+	"OnSuccess": "/RobSampleApp1/Actions/HELLLO.action",
 	"PageToOpen": "/RobSampleApp1/Pages/FormLali.page",
 	"_Type": "Action.Type.Navigation"
 }

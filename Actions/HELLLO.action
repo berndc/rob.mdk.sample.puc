@@ -1,0 +1,5 @@
+{
+	"Level": "Error",
+	"Message": "Hellllo LOG!!!",
+	"_Type": "Action.Type.Logger.LogMessage"
+}
