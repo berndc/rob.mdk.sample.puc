@@ -47,6 +47,10 @@
 							"IsVisible": true,
 							"KeyboardType": "Email",
 							"PlaceHolder": "PlaceHolder",
+							"Styles": {
+								"Background": "objectInput",
+								"Caption": "objectHeaderHeadlineobjectHeaderHeadline"
+							},
 							"Value": "{EmailAddress}",
 							"_Name": "FCEmail",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
