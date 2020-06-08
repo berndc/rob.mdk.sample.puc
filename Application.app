@@ -3,8 +3,7 @@
 	"MainPage": "/RobSampleApp1/Pages/Main.page",
 	"OnDidUpdate": "/RobSampleApp1/Actions/Service/InitializeOffline.action",
 	"OnLaunch": [
-		"/RobSampleApp1/Actions/Service/InitializeOffline.action",
-		"/RobSampleApp1/Actions/PushRegisterAct.action"
+		"/RobSampleApp1/Actions/Service/InitializeOffline.action"
 	],
 	"OnWillUpdate": "/RobSampleApp1/Rules/OnWillUpdate.js",
 	"Styles": "/RobSampleApp1/Styles/Styles.less",

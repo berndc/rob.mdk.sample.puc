@@ -22,8 +22,7 @@
 					},
 					"Search": {
 						"BarcodeScanner": true,
-						"Enabled": true,
-						"MinimumCharacterThreshold": "/RobSampleApp1/Rules/OnWillUpdate.js"
+						"Enabled": true
 					},
 					"Target": {
 						"EntitySet": "Products",

@@ -5,18 +5,22 @@
 	"ActivityIndicatorText": "Downloading...",
 	"DefiningRequests": [
 		{
-			"AutomaticallyRetrievesStreams": false,
+			"AutomaticallyRetrievesStreams": true,
 			"Name": "Customers",
 			"Query": "Customers"
 		},
 		{
-			"AutomaticallyRetrievesStreams": false,
+			"AutomaticallyRetrievesStreams": true,
 			"Name": "Products",
 			"Query": "Products"
 		}
 	],
 	"OnFailure": "/RobSampleApp1/Actions/Service/InitializeOfflineFailureMessage.action",
 	"OnSuccess": "/RobSampleApp1/Actions/LogSetState.action",
+	"OnSuccessLog": {
+		"Level": "Error",
+		"Message": ""
+	},
 	"Service": "/RobSampleApp1/Services/SampleServiceV2.service",
 	"ShowActivityIndicator": true,
 	"_Type": "Action.Type.OfflineOData.Initialize"

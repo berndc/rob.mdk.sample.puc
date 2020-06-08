@@ -7,25 +7,29 @@
 					"ContactCell": {
 						"ActivityItems": [
 							{
-								"ActivityType": "Phone",
-								"ActivityValue": "{PhoneNumber}"
+								"ActivityType": "VideoCall",
+								"ActivityValue": "PhoneNumber}"
 							},
 							{
 								"ActivityType": "Email",
 								"ActivityValue": "{EmailAddress}"
 							}
 						],
-						"Description": "{City}",
+						"Description": "{DateOfBirth}",
 						"DetailImage": "res://contact.png",
-						"Headline": "{{#Property:FirstName}} , {{#Property:LastName}}",
+						"Headline": "{{#Property:Customer/#Property:LastName}} , {{#Property:Customer/#Property:FirstName}}",
 						"OnPress": "/RobSampleApp1/Actions/Nav2CustomerDetailPage.action",
-						"Subheadline": "{{#Property:DateOfBirth}}"
+						"Subheadline": "{City}"
 					},
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"MaxItemCount": 10,
 					"Search": {
-						"Enabled": true
+						"Delay": 5,
+						"Enabled": true,
+						"MinimumCharacterThreshold": 3,
+						"Placeholder": "Kundennummer"
 					},
 					"Target": {
 						"EntitySet": "Customers",
@@ -36,10 +40,12 @@
 					"_Type": "Section.Type.ContactCell"
 				}
 			],
+			"Target": "",
 			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
+	"Target": "",
 	"_Name": "CustomerListPage",
 	"_Type": "Page"
 }

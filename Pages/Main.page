@@ -1,31 +1,10 @@
 {
-	"Caption": "P&C EH- Logistik: Main ",
+	"Caption": "P&C Logistik",
 	"Controls": [
 		{
 			"Sections": [
 				{
 					"Buttons": [
-						{
-							"OnPress": "/RobSampleApp1/Actions/Nav2CustomerListPage.action",
-							"Style": "MyPuCButton",
-							"Target": "",
-							"TextAlignment": "center",
-							"Title": "Kunden",
-							"Visible": true
-						},
-						{
-							"OnPress": "/RobSampleApp1/Actions/Nav2ProductLIstPage.action",
-							"Target": "",
-							"TextAlignment": "center",
-							"Title": "Artikel",
-							"Visible": true
-						},
-						{
-							"Target": "",
-							"TextAlignment": "center",
-							"Title": "LETI- Scan",
-							"Visible": true
-						},
 						{
 							"OnPress": "/RobSampleApp1/Actions/Nav2LaliPage.action",
 							"Target": "",
@@ -37,6 +16,26 @@
 							"Target": "",
 							"TextAlignment": "center",
 							"Title": "Wareneingang buchen",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"TextAlignment": "center",
+							"Title": "Warenausgang buchen",
+							"Visible": true
+						},
+						{
+							"OnPress": "/RobSampleApp1/Actions/Nav2CustomerListPage.action",
+							"Target": "",
+							"TextAlignment": "center",
+							"Title": "Kunden",
+							"Visible": true
+						},
+						{
+							"OnPress": "/RobSampleApp1/Actions/Nav2ProductLIstPage.action",
+							"Target": "",
+							"TextAlignment": "center",
+							"Title": "Artikel",
 							"Visible": true
 						}
 					],
@@ -58,6 +57,7 @@
 								"Image": "/RobSampleApp1/Images/puc_d.jpg",
 								"ImageIsCircular": true,
 								"Subtitle": "PuC",
+								"Target": "",
 								"Title": "Düsseldorf",
 								"Visible": true
 							}
@@ -67,6 +67,7 @@
 								"Image": "/RobSampleApp1/Images/dita.jpg",
 								"ImageIsCircular": true,
 								"Subtitle": "Retail",
+								"Target": "",
 								"Title": "FaDi",
 								"Visible": true
 							}
@@ -75,6 +76,7 @@
 					"Layout": {
 						"LayoutType": "HorizontalFit"
 					},
+					"Target": "",
 					"Visible": true,
 					"_Name": "SectionImageCollection0",
 					"_Type": "Section.Type.ImageCollection"
@@ -112,11 +114,11 @@
 				"Caption": "Upload Logs",
 				"Clickable": true,
 				"Enabled": true,
-				"ItemType": "Button",
+				"ItemType": "Normal",
 				"OnPress": "/RobSampleApp1/Actions/LogUpload.action",
 				"Target": "",
 				"Visible": true,
-				"_Name": "ToolbarItem0",
+				"_Name": "BtnUploadLog",
 				"_Type": "Control.Type.ToolbarItem"
 			}
 		]
