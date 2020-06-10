@@ -1,0 +1,5 @@
+{
+	"Animated": true,
+	"Message": "Aktion ausgeführt",
+	"_Type": "Action.Type.ToastMessage"
+}

@@ -6,11 +6,6 @@
 	"DefiningRequests": [
 		{
 			"AutomaticallyRetrievesStreams": true,
-			"Name": "Customers",
-			"Query": "Customers"
-		},
-		{
-			"AutomaticallyRetrievesStreams": true,
 			"Name": "Products",
 			"Query": "Products"
 		}

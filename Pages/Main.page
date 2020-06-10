@@ -1,4 +1,15 @@
 {
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RobSampleApp1/Actions/PushRegisterAct.action",
+				"Position": "right",
+				"SystemItem": "Organize",
+				"Text": "Einstellung",
+				"Visible": true
+			}
+		]
+	},
 	"Caption": "P&C Logistik",
 	"Controls": [
 		{
@@ -25,13 +36,6 @@
 							"Visible": true
 						},
 						{
-							"OnPress": "/RobSampleApp1/Actions/Nav2CustomerListPage.action",
-							"Target": "",
-							"TextAlignment": "center",
-							"Title": "Kunden",
-							"Visible": true
-						},
-						{
 							"OnPress": "/RobSampleApp1/Actions/Nav2ProductLIstPage.action",
 							"Target": "",
 							"TextAlignment": "center",
@@ -49,6 +53,7 @@
 				},
 				{
 					"EmptySection": {
+						"Caption": "Info",
 						"FooterVisible": false
 					},
 					"ImageCells": [
@@ -74,7 +79,7 @@
 						}
 					],
 					"Layout": {
-						"LayoutType": "HorizontalFit"
+						"LayoutType": "HorizontalScroll"
 					},
 					"Target": "",
 					"Visible": true,

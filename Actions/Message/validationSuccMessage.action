@@ -1,0 +1,16 @@
+{
+	"ActionResult": {
+		"_Name": "true"
+	},
+	"Animated": true,
+	"Message": "Auslierung angefügt",
+	"OnFailureLog": {
+		"Level": "Off",
+		"Message": "Fehler beim anfügen der Lieferung zur Ladeliste "
+	},
+	"OnSuccessLog": {
+		"Level": "Info",
+		"Message": "Auslieferung angefügt "
+	},
+	"_Type": "Action.Type.BannerMessage"
+}

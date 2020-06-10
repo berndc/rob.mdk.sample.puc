@@ -1,36 +1,72 @@
 {
-	"Caption": "FormLali",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RobSampleApp1/Actions/LogUpload.action",
+				"Position": "right",
+				"SystemItem": "Action",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Ladelisten erstellen",
 	"Controls": [
 		{
 			"Sections": [
 				{
-					"Caption": "{#Property:Product/#Property:CategoryName}}",
+					"Caption": "Eingaben",
 					"Controls": [
 						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Lagerort",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								"MV04",
+								"TW14",
+								"SO27",
+								"BW04",
+								"TS07",
+								"MV08",
+								"MV06"
+							],
+							"PickerPrompt": "Auswahl",
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Auswahl"
+							},
+							"Styles": {
+								"Value": "Auswahl"
+							},
+							"_Name": "FormCellListPicker0",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
 							"AlternateInput": "Barcode",
-							"Caption": "Product",
+							"Caption": "Lieferung",
 							"IsEditable": true,
 							"IsVisible": true,
 							"KeyboardType": "Default",
-							"PlaceHolder": "PlaceHolder",
-							"Styles": {
-								"Background": "objectHeaderBackground",
-								"Caption": "objectHeaderBodyText"
-							},
+							"PlaceHolder": "Auslieferung",
 							"Target": "",
-							"Value": "{CategoryName}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FC_Delivery",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
+							"AlternateInput": "None",
+							"Caption": "Menge",
 							"IsEditable": true,
 							"IsVisible": true,
-							"MaxNumberOfLines": 100,
-							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Number",
+							"PlaceHolder": "Anzahl",
 							"Target": "",
-							"Value": "{LongDescription}",
-							"_Name": "FormCellNote0",
-							"_Type": "Control.Type.FormCell.Note"
+							"_Name": "FormCellSimpleProperty2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
 					"Target": "",
@@ -39,19 +75,32 @@
 				{
 					"Controls": [
 						{
-							"AlternateInput": "None",
-							"Caption": "Caption",
-							"IsEditable": false,
+							"ButtonType": "Button",
 							"IsVisible": true,
-							"KeyboardType": "Url",
-							"PlaceHolder": "PlaceHolder",
-							"Target": "",
-							"Value": "{PictureUrl}",
-							"_Name": "FormCellSimpleProperty2",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"OnPress": "/RobSampleApp1/Rules/Validation/checkInputLali.js",
+							"TextAlignment": "center",
+							"Title": "send",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
 						}
 					],
 					"Target": "",
+					"Visible": true
+				},
+				{
+					"Caption": "Augaben",
+					"Controls": [
+						{
+							"AlternateInput": "None",
+							"Caption": "Ladeliste ",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"PlaceHolder": "Ladelistenummer",
+							"_Name": "FC_Lali",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
 					"Visible": true
 				}
 			],
@@ -61,6 +110,21 @@
 		}
 	],
 	"Target": "",
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "ToolbarItem",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/RobSampleApp1/Rules/Validation/checkInputLali.js",
+				"SystemItem": "Save",
+				"Visible": true,
+				"Width": 300,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
 	"_Name": "FormLali",
 	"_Type": "Page"
 }

@@ -1,21 +1,22 @@
 {
-	"Service": "/RobSampleApp1/Services/SampleServiceV2.service",
-	"DefiningRequests": [{
-		"Name": "Customers",
-		"Query": "Customers"
-	}, {
-		"Name": "Products",
-		"Query": "Products"
-	}, {
-		"Name": "SalesOrderHeaders",
-		"Query": "SalesOrderHeaders"
-	}, {
-		"Name": "SalesOrderItems",
-		"Query": "SalesOrderItems"
-	}],
-	"_Type": "Action.Type.OfflineOData.Download",
 	"ActionResult": {
 		"_Name": "sync"
 	},
-	"OnFailure": "/RobSampleApp1/Actions/Service/SyncFailureMessage.action"
+	"DefiningRequests": [
+		{
+			"Name": "Products",
+			"Query": "Products"
+		},
+		{
+			"Name": "SalesOrderHeaders",
+			"Query": "SalesOrderHeaders"
+		},
+		{
+			"Name": "SalesOrderItems",
+			"Query": "SalesOrderItems"
+		}
+	],
+	"OnFailure": "/RobSampleApp1/Actions/Service/SyncFailureMessage.action",
+	"Service": "/RobSampleApp1/Services/SampleServiceV2.service",
+	"_Type": "Action.Type.OfflineOData.Download"
 }

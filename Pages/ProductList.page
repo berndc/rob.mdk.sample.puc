@@ -8,20 +8,20 @@
 						"ActivityItems": [
 							{
 								"ActivityType": "Detail",
-								"ActivityValue": "{Price}"
+								"ActivityValue": "mehr"
 							}
 						],
-						"Description": "{CategoryName}",
-						"DetailImage": "res://contact.png",
+						"Description": "{QuantityUnit}",
+						"DetailImage": "/RobSampleApp1/Rules/Product/GetPicturePath.js",
 						"Headline": "{Name}",
 						"OnPress": "/RobSampleApp1/Actions/Nav2ProductDetail.action",
-						"Subheadline": "{Price}"
+						"Subheadline": "{{#Property:Price}} {{#Property:CurrencyCode}}"
 					},
 					"EmptySection": {
-						"FooterVisible": false
+						"Caption": "Keinen Artike gefunden",
+						"FooterVisible": true
 					},
 					"Search": {
-						"BarcodeScanner": true,
 						"Enabled": true
 					},
 					"Target": {
@@ -33,10 +33,26 @@
 					"_Type": "Section.Type.ContactCell"
 				}
 			],
+			"Target": "",
 			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
+	"Target": "",
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "ToolbarItem",
+				"Clickable": true,
+				"Enabled": true,
+				"SystemItem": "Add",
+				"Target": "",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
 	"_Name": "Rob_Customer_List",
 	"_Type": "Page"
 }
