@@ -43,7 +43,7 @@
 							"Styles": {
 								"Value": "Auswahl"
 							},
-							"_Name": "FormCellListPicker0",
+							"_Name": "FC_LORT",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
@@ -65,7 +65,7 @@
 							"KeyboardType": "Number",
 							"PlaceHolder": "Anzahl",
 							"Target": "",
-							"_Name": "FormCellSimpleProperty2",
+							"_Name": "FC_MENGE",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
@@ -77,10 +77,10 @@
 						{
 							"ButtonType": "Button",
 							"IsVisible": true,
-							"OnPress": "/RobSampleApp1/Rules/Validation/checkInputLali.js",
+							"OnPress": "/RobSampleApp1/Actions/Lali/LaliCheckField.action",
 							"TextAlignment": "center",
 							"Title": "send",
-							"_Name": "FormCellButton0",
+							"_Name": "BTN_SEND",
 							"_Type": "Control.Type.FormCell.Button"
 						}
 					],

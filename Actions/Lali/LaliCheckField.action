@@ -1,0 +1,10 @@
+{
+	"OnFailure": "/RobSampleApp1/Rules/Lali/UpdateRequiredFailed.js",
+	"OnSuccess": "/RobSampleApp1/Actions/Lali/MsgLaliAddSuccess.action",
+	"RequiredFields": [
+		"FC_Delivery",
+		"FC_MENGE",
+		"FC_LORT"
+	],
+	"_Type": "Action.Type.CheckRequiredFields"
+}
