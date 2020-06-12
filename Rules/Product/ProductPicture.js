@@ -29,7 +29,7 @@ export default class ProductPicture {
 		binding.productId = productId;
 		binding['@odata.readLink'] = readLink;
 		pageProxy.setActionBinding(binding);
-		return pageProxy.executeAction('/SalesOrdersOffline/Actions/Product/DownloadProductPicture.action').then(function (result) {
+		return pageProxy.executeAction('/RobSampleApp1/Actions/Product/DownloadProductPicture.action').then(function (result) {
 			var file = _this.getFile(pageProxy, productId);
 			file.writeSync(result.data);
 			delete pageProxy._clientAPIProps().actionBinding;

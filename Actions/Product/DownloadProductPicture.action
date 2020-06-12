@@ -1,0 +1,8 @@
+{
+	"Target": {
+		"EntitySet": "Products",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
+	},
+	"_Type": "Action.Type.ODataService.DownloadMedia"
+}

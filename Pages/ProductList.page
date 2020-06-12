@@ -11,7 +11,7 @@
 								"ActivityValue": "mehr"
 							}
 						],
-						"Description": "{QuantityUnit}",
+						"Description": "{SupplierDetails/SupplierName}",
 						"DetailImage": "/RobSampleApp1/Rules/Product/GetPicturePath.js",
 						"Headline": "{Name}",
 						"OnPress": "/RobSampleApp1/Actions/Nav2ProductDetail.action",
@@ -22,10 +22,13 @@
 						"FooterVisible": true
 					},
 					"Search": {
-						"Enabled": true
+						"BarcodeScanner": true,
+						"Enabled": true,
+						"Placeholder": "Artikelnummer"
 					},
 					"Target": {
 						"EntitySet": "Products",
+						"QueryOptions": "$expand=StockDetails,SupplierDetails",
 						"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
 					},
 					"Visible": true,
