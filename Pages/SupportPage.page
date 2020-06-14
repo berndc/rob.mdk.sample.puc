@@ -1,0 +1,89 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RobSampleApp1/Actions/ClosePage.action",
+				"Position": "right",
+				"Text": "OK",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Einstellung",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+					],
+					"Visible": true
+				},
+				{
+					"Caption": "Notificatio",
+					"Controls": [
+						{
+							"Caption": "Push einschalten",
+							"IsEditable": true,
+							"IsVisible": true,
+							"OnValueChange": "/RobSampleApp1/Actions/PushRegisterAct.action",
+							"Value": false,
+							"_Name": "FormCellSwitch1",
+							"_Type": "Control.Type.FormCell.Switch"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Caption": "Loggereinstellung",
+					"Controls": [
+						{
+							"Caption": "Logger einschalten",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": false,
+							"_Name": "FormCellSwitch0",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Loglevel auswählen",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								"Debung",
+								"Info",
+								"Warrning",
+								"Error"
+							],
+							"PickerPrompt": "Please select one single item",
+							"_Name": "FormCellListPicker0",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logupload",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/RobSampleApp1/Actions/LogUpload.action",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "SupportPage",
+	"_Type": "Page"
+}

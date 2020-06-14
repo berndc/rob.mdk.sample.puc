@@ -1,0 +1,8 @@
+{
+	"ModalPage": true,
+	"PageToOpen": "/RobSampleApp1/Pages/SupportPage.page",
+	"Transition": {
+		"Curve": "EaseInOut"
+	},
+	"_Type": "Action.Type.Navigation"
+}

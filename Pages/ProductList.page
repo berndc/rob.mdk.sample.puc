@@ -4,27 +4,33 @@
 		{
 			"Sections": [
 				{
-					"ContactCell": {
-						"ActivityItems": [
-							{
-								"ActivityType": "Detail",
-								"ActivityValue": "mehr"
-							}
-						],
-						"Description": "{SupplierDetails/SupplierName}",
-						"DetailImage": "/RobSampleApp1/Rules/Product/GetPicturePath.js",
-						"Headline": "{Name}",
-						"OnPress": "/RobSampleApp1/Actions/Nav2ProductDetail.action",
-						"Subheadline": "{{#Property:Price}} {{#Property:CurrencyCode}}"
-					},
 					"EmptySection": {
-						"Caption": "Keinen Artike gefunden",
 						"FooterVisible": true
 					},
+					"Footer": {
+						"AttributeLabel": "/RobSampleApp1/Rules/Product/CountProducts.js",
+						"Caption": "Anzahl Artikel",
+						"UseBottomPadding": false,
+						"Visible": true
+					},
+					"MaxItemCount": 25,
+					"ObjectCell": {
+						"AccessoryType": "detailButton",
+						"Description": "{SupplierDetails/SupplierName}",
+						"DetailImage": "/RobSampleApp1/Images/puc_d.jpg",
+						"DetailImageIsCircular": true,
+						"DetailImageText": "{PictureUrl}",
+						"Footnote": "{ShortDescription}",
+						"OnAccessoryButtonPress": "/RobSampleApp1/Actions/Nav2LaliPage.action",
+						"OnPress": "/RobSampleApp1/Actions/Nav2ProductDetail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{{#Property:Product/#Property:Price}} {{#Property:Product/#Property:CurrencyCode}}",
+						"Subhead": "{CategoryName}",
+						"Title": "{Name}"
+					},
 					"Search": {
-						"BarcodeScanner": true,
 						"Enabled": true,
-						"Placeholder": "Artikelnummer"
+						"Placeholder": "Artikelsuche"
 					},
 					"Target": {
 						"EntitySet": "Products",
@@ -32,8 +38,8 @@
 						"Service": "/RobSampleApp1/Services/SampleServiceV2.service"
 					},
 					"Visible": true,
-					"_Name": "SectionContactCellTable0",
-					"_Type": "Section.Type.ContactCell"
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
 				}
 			],
 			"Target": "",

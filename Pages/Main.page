@@ -71,6 +71,7 @@
 							"ImageCell": {
 								"Image": "/RobSampleApp1/Images/dita.jpg",
 								"ImageIsCircular": true,
+								"OnPress": "/RobSampleApp1/Actions/Nav2SupportPage.action",
 								"Subtitle": "Retail",
 								"Target": "",
 								"Title": "FaDi",
@@ -81,7 +82,6 @@
 					"Layout": {
 						"LayoutType": "HorizontalScroll"
 					},
-					"Target": "",
 					"Visible": true,
 					"_Name": "SectionImageCollection0",
 					"_Type": "Section.Type.ImageCollection"
